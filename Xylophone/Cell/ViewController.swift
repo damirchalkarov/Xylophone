@@ -29,7 +29,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         getUserRecord()
         tableView.register(UINib(nibName:"RecordTableViewCell", bundle: nil), forCellReuseIdentifier: "cellIdentifier")
         tableView.dataSource = self
-        tableView.rowHeight = 40
+//        tableView.rowHeight = 40
         
         recordButton.layer.cornerRadius = 10
         playButton.layer.cornerRadius = 10
@@ -134,7 +134,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
                 self.playSound(fileName: buttonTag)
             }
-            delay += 1.0
+            delay += 0.5
         }
     }
 
@@ -149,7 +149,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
         let dictionary = userRecordArrayOfDictionaries[indexPath.row]
         if let name = dictionary["name"] as? String, let record = dictionary["record"] as? [String] {
-            cell.recordTextLabel.text = "Name: \(name), record: \(record.joined(separator: ", "))"
+            cell.recordTextLabel.text = "Name: \(name), Record: \(record.joined(separator: ", ")) \n"
         }
 
         return cell
