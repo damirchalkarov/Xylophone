@@ -20,6 +20,8 @@
 		EB6EDA3B2CBBFC650005B54F /* E.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB6EDA332CBBFC650005B54F /* E.wav */; };
 		EB6EDA3C2CBBFC650005B54F /* F.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB6EDA342CBBFC650005B54F /* F.wav */; };
 		EB6EDA3D2CBBFC650005B54F /* G.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB6EDA352CBBFC650005B54F /* G.wav */; };
+		EBDFC65E2CD8E2F700938369 /* RecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBDFC65D2CD8E2F700938369 /* RecordTableViewCell.xib */; };
+		EBDFC65F2CD8E2F700938369 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDFC65C2CD8E2F700938369 /* RecordTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		EB6EDA332CBBFC650005B54F /* E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = E.wav; sourceTree = "<group>"; };
 		EB6EDA342CBBFC650005B54F /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F.wav; sourceTree = "<group>"; };
 		EB6EDA352CBBFC650005B54F /* G.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = G.wav; sourceTree = "<group>"; };
+		EBDFC65C2CD8E2F700938369 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
+		EBDFC65D2CD8E2F700938369 /* RecordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +76,7 @@
 			children = (
 				EB6EDA1B2CBBF5DA0005B54F /* AppDelegate.swift */,
 				EB6EDA1D2CBBF5DA0005B54F /* SceneDelegate.swift */,
-				EB6EDA1F2CBBF5DA0005B54F /* ViewController.swift */,
+				EBDFC65B2CD8E2DC00938369 /* Cell */,
 				EB6EDA212CBBF5DA0005B54F /* Main.storyboard */,
 				EB6EDA242CBBF5DA0005B54F /* Assets.xcassets */,
 				EB6EDA262CBBF5DA0005B54F /* LaunchScreen.storyboard */,
@@ -94,6 +98,16 @@
 				EB6EDA352CBBFC650005B54F /* G.wav */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		EBDFC65B2CD8E2DC00938369 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EB6EDA1F2CBBF5DA0005B54F /* ViewController.swift */,
+				EBDFC65C2CD8E2F700938369 /* RecordTableViewCell.swift */,
+				EBDFC65D2CD8E2F700938369 /* RecordTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBDFC65E2CD8E2F700938369 /* RecordTableViewCell.xib in Resources */,
 				EB6EDA392CBBFC650005B54F /* C.wav in Resources */,
 				EB6EDA252CBBF5DA0005B54F /* Assets.xcassets in Resources */,
 				EB6EDA3A2CBBFC650005B54F /* D.wav in Resources */,
@@ -176,6 +191,7 @@
 			files = (
 				EB6EDA202CBBF5DA0005B54F /* ViewController.swift in Sources */,
 				EB6EDA1C2CBBF5DA0005B54F /* AppDelegate.swift in Sources */,
+				EBDFC65F2CD8E2F700938369 /* RecordTableViewCell.swift in Sources */,
 				EB6EDA1E2CBBF5DA0005B54F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
